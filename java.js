@@ -11,18 +11,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 2. Active Navigation Link Indicator ---
-    const currentPage = window.location.pathname.split('/').pop();
-    const navAnchors = document.querySelectorAll('.desktop-nav .nav-links a, .nav-links-mobile a'); 
+    // --- 2. Active Navigation Link Indicator (Robust Version) ---
+    const currentPath = window.location.pathname; // Gets the path, e.g., "/events.html" or "/"
+    const navAnchors = document.querySelectorAll('.desktop-nav .nav-links a, .nav-links-mobile a');
+    
     navAnchors.forEach(link => {
-        const linkPage = link.getAttribute('href');
+        // Create a URL object from the link's href to easily get its pathname
+        const linkPath = new URL(link.href).pathname;
         link.classList.remove('active');
-        if ((currentPage === '' || currentPage === 'index.html') && linkPage === 'index.html') {
+
+        // Check for a direct path match
+        if (linkPath === currentPath) {
             link.classList.add('active');
-        } else if (linkPage === currentPage) {
+        }
+
+        // Special case for the homepage: if the current path is the root ('/'),
+        // and the link points to 'index.html', it should be active.
+        if (currentPath === '/' && linkPath === '/index.html') {
             link.classList.add('active');
         }
     });
+
 
     // --- 3. Countdown Timer Logic ---
     const countDownDate = new Date("Nov 15, 2025 08:00:00").getTime();
@@ -34,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const secondsEl = document.getElementById("seconds");
 
         if (daysEl && hoursEl && minutesEl && secondsEl) {
-            const x = setInterval(function() {
+            const interval = setInterval(() => {
                 const now = new Date().getTime();
                 const distance = countDownDate - now;
 
                 if (distance < 0) {
-                    clearInterval(x);
-                    countdownContainer.innerHTML = "<div class='event-live'>The Event is Live!</div>";
+                    clearInterval(interval);
+                    countdownContainer.innerHTML = "<div class='countdown-ended'>The event has started!</div>";
                 } else {
                     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -77,3 +86,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
