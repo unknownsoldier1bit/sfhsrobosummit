@@ -240,47 +240,16 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
    Team Page
    ================================= */
 .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     max-width: 1100px;
     margin: 0 auto;
     padding-bottom: 4rem;
 }
-
-.team-heading {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    color: var(--text-primary);
-}
-
-.team-row {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 3rem;
-}
-
-.team-member-layout {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48%;
-}
-
-.team-border {
-    height: 500px; 
-    width: auto;
-    flex-shrink: 0;
-}
-
 .team-member-card {
     background: transparent;
-    width: 100%;
-    margin: 0 -15px; 
-    z-index: 2;
 }
-
 .team-member-photo {
     position: relative;
     width: 100%;
@@ -290,18 +259,15 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
     border: 1px solid var(--border-color);
     transition: var(--transition);
 }
-
 .team-member-photo:hover {
     transform: scale(1.03);
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
-
 .team-member-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .team-member-info {
     position: absolute;
     bottom: 0;
@@ -310,16 +276,22 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
     padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     background: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 100%);
 }
-
 .team-member-name {
     font-size: 1.6rem;
     color: var(--text-primary);
     margin-bottom: 0.25rem;
 }
-
 .team-member-role {
     color: var(--text-secondary);
     font-size: 1rem;
+}
+
+/* Responsive styles for Team Page */
+@media (max-width: 768px) {
+    /* Team Page Mobile */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
 }
 /* Schedule Page */
 .timeline { position: relative; max-width: 800px; margin: 3rem auto; padding-bottom: 4rem; }
