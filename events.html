@@ -53,30 +53,37 @@
                 
                 <h3 class="events-heading">High School Events</h3>
                 <div class="events-grid">
-                    <div class="event-card" data-event="junkyard">
-                        <div class="card-content">
-                            <div class="card-front">
-                                <div class="event-icon">🔨</div>
-                                <h3>Junkyard Battle</h3>
-                                <p>Build innovative machines using limited resources under a time crunch.</p>
-                            </div>
-                            <div class="card-back">
-                                <h4>Event: Junkyard Battle</h4>
-                                <p>An exciting engineering challenge where teams are first briefed on the objectives and rules, then given time to build innovative machines or structures using limited resources.</p>
-                            </div>
-                        </div>
-
-                        <button class="rule-button">More Information</button>
-                    </div>
                     <div class="event-card" data-event="line-follower">
+    
+    <!-- Event Content (front info) -->
+    <div class="card-content">
+        <div class="event-icon">⫯</div>
+        <h3>Line Follower</h3>
+        <p>Teams test their robots in a time-based race to follow a line path automatically.</p>
+
+        <!-- You can include key specs directly if you want -->
+        
+         </div>
+
+    <!-- Button to open modal with full rules -->
+    <button class="rule-button">More Information</button>
+</div>
+<div id="rules-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <div id="modal-body"></div>
+  </div>
+</div>
+                    <div class="event-card" data-event="Robo-race">
                         <div class="card-content">
                             <div class="card-front">
                                 <div class="event-icon">🏁</div>
-                                <h3>Line Follower</h3>
-                                <p>Teams test their robots in a time-based race to follow a line path automatically.</p>
+                                <h3>Robo Race</h3>
+                                <p>A high-speed race where bots navigate an obstacle-filled track.</p>
                             </div>
                             <div class="card-back">
-                                <h4>Event: Line Follower</h4>
+                                <h4>Event: Robo Race</h4>
                                 <p><strong>Maximum Length:</strong> 20 cm</p><p><strong>Maximum Width:</strong> 20 cm</p><p><strong>Maximum Height:</strong> 10 cm</p><p><strong>Weight Limit:</strong> 5 kg</p>
                             </div>
                         </div>
@@ -130,22 +137,6 @@
 
                 <h3 class="events-heading">Middle School Events</h3>
                 <div class="events-grid">
-                    <div class="event-card" data-event="tag">
-                        <div class="card-content">
-                            <div class="card-front">
-                                <div class="event-icon">🏷️</div>
-                                <h3>Tag</h3>
-                                <p>A classic game of chase with a robotic twist.</p>
-                            </div>
-                            <div class="card-back">
-                                <h4>Event: Tag</h4>
-                                    <p><strong>Maximum Length:</strong> 25 cm</p><p><strong>Maximum Width:</strong> 25 cm</p><p><strong>Maximum Height:</strong> 20 cm</p><p><strong>Weight Limit:</strong> 6 kg</p>
-
-                            </div>
-                        </div>
-                        <button class="rule-button">More Information</button>
-                    </div>
-                    
                     <div class="event-card" data-event="tug-of-war">
                         <div class="card-content">
                             <div class="card-front">
@@ -169,7 +160,35 @@
                             </div>
                             <div class="card-back">
                                 <h4>Event: Innovation Junior</h4>
-                                <p>Waste management and water conservation are essential for a healthy community. Your challenge is to build a robotic prototype that tackles a specific problem related to either recycling, waste disposal, or water usage in a local community setting. The solution should be a practical, hands-on tool that can perform a clear task.</p>
+                                <p>Waste management is essential for a healthy community. Your challenge is to build a robotic prototype that tackles a specific problem related to either recycling or waste disposal in a local community setting. The solution should be a practical, hands-on tool that can perform a clear task.</p>
+                            </div>
+                        </div>
+                        <button class="rule-button">More Information</button>
+                    </div>
+                    <div class="event-card" data-event="tug-of-war">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <div class="event-icon">🎈</div>
+                                <h3>Balloon Race</h3>
+                                <p>Build a lightweight, balloon-powered vehicle to travel the farthest distance.</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Event: Balloon Race</h4>
+                                <p><strong>Maximum Length:</strong> 30 cm</p><p><strong>Maximum Width:</strong> 30 cm</p><p><strong>Maximum Height:</strong> 25 cm</p><p><strong>Weight Limit:</strong> 6 kg</p>
+                            </div>
+                        </div>
+                        <button class="rule-button">More Information</button>
+                    </div>
+                    <div class="event-card" data-event="tug-of-war">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <div class="event-icon">🚀</div>
+                                <h3>Water Rocket</h3>
+                                <p>A challenge to design and launch water-propelled rockets for maximum flight.</p>
+                            </div>
+                            <div class="card-back">
+                                <h4>Event: Balloon Race</h4>
+                                <p><strong>Maximum Length:</strong> 30 cm</p><p><strong>Maximum Width:</strong> 30 cm</p><p><strong>Maximum Height:</strong> 25 cm</p><p><strong>Weight Limit:</strong> 6 kg</p>
                             </div>
                         </div>
                         <button class="rule-button">More Information</button>
@@ -178,6 +197,15 @@
             </div>
         </section>
     </main>
+
+<!-- Modal -->
+<div id="customModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" id="closeModalBtn">&times;</span>
+    <h2>Modal Title</h2>
+    <p>This is your modal content. You can place text, buttons, or images here.</p>
+  </div>
+</div>
 </body>
 </html>
 
