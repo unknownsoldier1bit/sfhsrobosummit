@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Interference from coaches or misbehavior can lead to disqualification.</li>
         <li>Judges’ decision is final.</li>
       </ul>
-      <p><strong>Scoring Criteria (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Speed (Completion Time): 40</li>
         <li>Accuracy (Line Following Precision): 25</li>
