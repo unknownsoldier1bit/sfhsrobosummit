@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // eventRules (keys must match data-event values)
 
     // eventRules (keys must match data-event values)
+    // eventRules (keys must match data-event values)
   const eventRules = {
     'line-follower': `
       <p><strong>Description:</strong> Build an autonomous robot that can follow a black line on a white surface and reach the finish as fast as possible.</p>
@@ -86,16 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Interference from coaches or misbehavior can lead to disqualification.</li>
         <li>Judges’ decision is final.</li>
       </ul>
-      <p><strong>Scoring:</strong></p>
+      <p><strong>Scoring Criteria (100 Marks):</strong></p>
       <ul>
-        <li>Fastest completion time determines winner.</li>
-        <li>Bonus: 10 points per milestone (approx. 10 milestones total).</li>
-        <li>Line width: 1.5 cm.</li>
-        <li>Arena design will be shared on event day.</li>
+        <li>Speed (Completion Time): 40</li>
+        <li>Accuracy (Line Following Precision): 25</li>
+        <li>Design & Stability: 15</li>
+        <li>Autonomous Functionality: 10</li>
+        <li>Rule Compliance & Team Conduct: 10</li>
       </ul>
     `,
 
-    'Robo-race': `
+    'robo-race': `
       <p><strong>Overview:</strong> Design a fast, stable, and intelligent robot that navigates an obstacle-filled track in the shortest time possible.</p>
       <p><strong>Specifications:</strong></p>
       <ul>
@@ -118,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Damaging track or other robots = disqualification.</li>
         <li>Ties broken by fewer penalties.</li>
       </ul>
-      <p><strong>Scoring (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Speed (time): 40</li>
         <li>Stability & Control: 20</li>
@@ -153,13 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>No trapping or grabbing the ball.</li>
         <li>Intentional damage = disqualification.</li>
       </ul>
-      <p><strong>Judging (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Design & Build: 20</li>
         <li>Speed & Control: 20</li>
         <li>Strategy & Gameplay: 30</li>
         <li>Team Coordination: 10</li>
-        <li>Fair Play & Safety: 10</li>
+        <li>Fair Play & Safety: 20</li>
       </ul>
     `,
 
@@ -180,8 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Eliminated if pushed out, flipped, or immobilized for 10 seconds.</li>
         <li>Last active bot wins.</li>
       </ul>
-      <p><strong>Disqualification:</strong> Damage to arena or unsportsmanlike conduct.</p>
-      <p><strong>Judging (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Robot Design & Durability: 30</li>
         <li>Driver Skill & Aggression: 30</li>
@@ -210,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Brief report or poster explaining problem, solution, and scalability.</li>
         <li>Live demo or 1–2 min video.</li>
       </ul>
-      <p><strong>Evaluation (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Innovation & Creativity: 20</li>
         <li>Relevance to Theme: 20</li>
@@ -237,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Demonstrate working prototype (live or via video).</li>
         <li>Optional: Poster or model explaining design.</li>
       </ul>
-      <p><strong>Evaluation (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Innovation & Creativity: 20</li>
         <li>Relevance to Theme: 20</li>
@@ -259,6 +260,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Unethical behavior = disqualification.</li>
         <li>Judges’ decisions are final; no video evidence accepted.</li>
       </ul>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
+      <ul>
+        <li>Pulling Strength: 30</li>
+        <li>Traction & Control: 25</li>
+        <li>Robot Design & Stability: 20</li>
+        <li>Strategy & Execution: 15</li>
+        <li>Rule Compliance & Conduct: 10</li>
+      </ul>
     `,
 
     'balloon-race': `
@@ -269,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Use recyclable, lightweight materials (bottles, straws, cardboard, etc.).</li>
         <li>Each team presents their car and explains their design choices.</li>
       </ul>
-      <p><strong>Evaluation (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Innovation & Design: 20</li>
         <li>Distance Covered: 25</li>
@@ -288,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <li>Launcher provided by organizers.</li>
         <li>Teams explain design and aerodynamics before launch.</li>
       </ul>
-      <p><strong>Evaluation (100 Marks):</strong></p>
+      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
       <ul>
         <li>Design & Stability: 20</li>
         <li>Launch Height/Distance: 25</li>
@@ -298,6 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
     `,
   };
+
 
 
   // attach listener to every rule-button
