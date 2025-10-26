@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- 3. Countdown Timer ---
-  const countDownDate = new Date("Nov 15, 2025 08:00:00").getTime();
+  const countDownDate = new Date("Nov 22, 2025 08:00:00").getTime();
   const countdownContainer = document.getElementById("countdown-container");
 
   if (countdownContainer) {
