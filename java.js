@@ -288,23 +288,10 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
     `,
 
-    'water-rocket': `
-      <p><strong>Overview:</strong> Build and launch a water rocket using air pressure to achieve maximum height and stable flight.</p>
-      <ul>
-        <li>2–4 students per team (Grades III–VIII).</li>
-        <li>Use plastic bottles (1L–2L), fins, and nose cone made of recycled materials.</li>
-        <li>Propellant: water + air pressure (manual pump only).</li>
-        <li>Launcher provided by organizers.</li>
-        <li>Teams explain design and aerodynamics before launch.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Design & Stability: 20</li>
-        <li>Launch Height/Distance: 25</li>
-        <li>Safety & Functionality: 20</li>
-        <li>Creativity & Materials: 15</li>
-        <li>Presentation: 20</li>
-      </ul>
+    'circuit-breaker': `
+      <p><strong>Overview:</strong> In this interactive modeling session, students will learn how to design and visualize 3D components using
+       TinkerCAD and similar software. The workshop focuses on translating creative ideas into tangible digital models, helping participants
+        understand real-world applications of CAD in robotics, design, and engineering.</p>
     `,
   };
 
