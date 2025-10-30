@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `,
 
     'circuit-breaker': `
-      <p><strong>Overview:</strong> In this interactive modeling session, students will learn how to design and visualize 3D components using
+      <p><strong>Overview:</strong>A half an hour workshop will be conducted before the event. In this interactive modeling session, students will learn how to design and visualize 3D components using
        TinkerCAD and similar software. The workshop focuses on translating creative ideas into tangible digital models, helping participants
         understand real-world applications of CAD in robotics, design, and engineering.</p>
     `,
