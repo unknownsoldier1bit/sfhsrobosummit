@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `,
 
     'circuit-breaker': `
-      <p><strong>Overview:</strong> ChatGPT said:A half-hour workshop will be conducted before the event. In this interactive modeling session, 
+      <p><strong>Overview:</strong> A half-hour workshop will be conducted before the event. In this interactive modeling session, 
       students will learn how to design and visualize 3D components using TinkerCAD and similar software. The workshop will focus on translating
       creative ideas into tangible digital models, helping participants understand the real-world applications of CAD in robotics, design, and engineering.</p>
     `,
@@ -338,3 +338,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
