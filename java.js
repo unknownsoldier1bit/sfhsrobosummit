@@ -222,8 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
     `,
 
     'innovation-jr': `
-      <p><strong>Theme:</strong> Waste Management & Water Conservation</p>
-      <p><strong>Objective:</strong> Build a simple robotic prototype solving a recycling, waste, or water issue at home or in the community.</p>
+      <p><strong>Theme:</strong> Waste Management</p>
+      <p><strong>Objective:</strong> Build a simple robotic prototype solving a recycling, waste, or other such issues at home or in the community.</p>
       <p><strong>Team:</strong> 2–4 students (Grades III–VIII).</p>
       <p><strong>Allowed Components:</strong></p>
       <ul>
