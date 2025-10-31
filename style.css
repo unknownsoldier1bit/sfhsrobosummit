@@ -206,7 +206,19 @@ body {
    ================================= */
 .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; color: #ffffff; }
 .hero-background { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
-.background-video { width: 100%; height: 100%; object-fit: cover; filter: blur(8px); }
+/* === Background Video Styling === */
+/* === Background Video Styling === */
+.background-video {
+    position: fixed;          /* Keep it fixed behind everything */
+    top: 0;
+    left: 0;
+    width: 100vw;             /* Full width */
+    height: 100vh;            /* Full height */
+    object-fit: cover;        /* Fill the screen */
+    filter: blur(8px) brightness(1.0); /* Add blur + darken slightly for contrast */
+    z-index: -2;              /* Behind all other content */
+}
+
 .video-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
 .page-background-static { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-size: cover; background-position: center; filter: blur(8px); }
 body.page-events .page-background-static { background-image: url('events.jpg'); }
