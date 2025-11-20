@@ -442,6 +442,15 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
         align-items: center;
         padding: 0 18px;
     }
+    .modal {
+        align-items: flex-start !important;
+        padding-top: 120px !important;   /* below mobile header */
+    }
+
+    .modal-content {
+        margin-top: 0 !important; /* override previous margins */
+    }
+}
     
     .mobile-nav .nav-left { grid-column: 1; text-align: left; }
     .mobile-nav .nav-center { grid-column: 2; text-align: center; }
