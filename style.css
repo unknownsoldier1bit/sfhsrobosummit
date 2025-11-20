@@ -536,7 +536,7 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
     position: fixed;
     z-index: 2000; 
     left: 0;
-    top: 0;
+    top: 12px;
     width: 100%; 
     height: 100%; 
     overflow: auto; 
@@ -600,7 +600,7 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 
 /* Show modal */
 .modal.show {
-  top: 12px;
+  display: flex;
 }
 
 /* Modal content */
