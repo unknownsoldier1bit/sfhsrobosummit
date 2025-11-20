@@ -600,7 +600,7 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 
 /* Show modal */
 .modal.show {
-  display: flex;
+  top: 12px;
 }
 
 /* Modal content */
