@@ -444,6 +444,22 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 .timeline-item.left::after { left: 100%; transform: translateX(-50%); }
 .timeline-item.right::after { left: 0; transform: translateX(-50%); }
 
+.timeline::after { 
+    content: ''; 
+    position: absolute; 
+    width: 4px; 
+    background: var(--gradient-primary); 
+    
+    /* CHANGE THIS VALUE to move the line down */
+    top: 80px;  /* Formerly top: 0; */
+    
+    bottom: 0; 
+    left: 50%; 
+    border-radius: 2px; 
+    box-shadow: 0 0 10px var(--shadow-glow); 
+    transform: translateX(-50%); 
+}
+
 .timeline-content { 
     background: var(--card-bg); 
     backdrop-filter: blur(15px); 
@@ -584,12 +600,6 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
         color: #ffffff;
         text-shadow: none;
     }
-
- /*   .timeline::after { left: 21px; }
-    .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
-    .timeline-item.left, .timeline-item.right { left: 0; text-align: left; }
-    .timeline-item.left::after, .timeline-item.right::after { left: 21px; }
-} */
 
 @media (max-width: 480px) {
     .countdown-container { gap: 0.5rem; }
