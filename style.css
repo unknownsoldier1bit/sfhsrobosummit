@@ -444,6 +444,50 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 .timeline-item.left::after { left: 100%; transform: translateX(-50%); }
 .timeline-item.right::after { left: 0; transform: translateX(-50%); }
 
+.timeline-content { 
+    background: var(--card-bg); 
+    backdrop-filter: blur(15px); 
+    border: 1px solid var(--border-color); 
+    color: #ffffff; 
+    padding: 1.5rem; 
+    position: relative; 
+    border-radius: 12px; 
+    transition: var(--transition); 
+    text-align: left; 
+    display: flex; /* Use flexbox to align items if needed, or just keep block */
+    flex-direction: column;
+    gap: 0.5rem; /* Adds consistent space between time, title, and description */
+}
+
+.timeline-content:hover { transform: scale(1.02); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
+
+.timeline-time { 
+    color: var(--text-primary); 
+    font-weight: bold; 
+    font-size: 1.1rem; 
+    margin-bottom: 0; /* Removed margin-bottom as gap handles it */
+    display: inline-flex;
+    align-items: center;
+}
+
+.timeline-title { 
+    color: #ffffff; 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    margin-bottom: 0; /* Removed margin-bottom as gap handles it */
+    line-height: 1.3; /* Better line height for multi-line titles */
+}
+
+.timeline-description { 
+    color: rgba(255, 255, 255, 0.8); 
+    line-height: 1.5; 
+    font-size: 0.95rem; 
+}
+
+.timeline-icon { 
+    font-size: 1.5rem; 
+    margin-right: 0.5rem; 
+}
 
 /* Countdown Timer */
 .countdown-container { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 3rem; text-align: center; }
