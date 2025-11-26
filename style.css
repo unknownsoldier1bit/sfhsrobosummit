@@ -585,11 +585,11 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
         text-shadow: none;
     }
 
-    .timeline::after { left: 21px; }
+ /*   .timeline::after { left: 21px; }
     .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
     .timeline-item.left, .timeline-item.right { left: 0; text-align: left; }
     .timeline-item.left::after, .timeline-item.right::after { left: 21px; }
-}
+} */
 
 @media (max-width: 480px) {
     .countdown-container { gap: 0.5rem; }
