@@ -417,7 +417,8 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 }
 }
 /* Schedule Page */
-.timeline { position: relative; max-width: 800px; margin: 3rem auto; padding-bottom: 4rem; }
+
+/* .timeline { position: relative; max-width: 800px; margin: 3rem auto; padding-bottom: 4rem; }
 .timeline::after { content: ''; position: absolute; width: 4px; background: var(--gradient-primary); top: 0; bottom: 0; left: 50%; border-radius: 2px; box-shadow: 0 0 10px var(--shadow-glow); transform: translateX(-50%); }
 .timeline-item { padding: 10px 40px; position: relative; width: 50%; }
 .timeline-item::after { content: ''; position: absolute; width: 20px; height: 20px; background-color: #000000; border: 3px solid var(--text-primary); top: 15px; border-radius: 50%; z-index: 1; box-shadow: 0 0 15px var(--shadow-glow); }
@@ -431,6 +432,18 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 .timeline-title { color: #ffffff; font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem; }
 .timeline-description { color: rgba(255, 255, 255, 0.8); line-height: 1.5; font-size: 0.95rem; }
 .timeline-icon { font-size: 1.5rem; margin-right: 0.5rem; vertical-align: middle; }
+
+*/
+
+.timeline { position: relative; max-width: 800px; margin: 3rem auto; padding-bottom: 4rem; }
+.timeline::after { content: ''; position: absolute; width: 4px; background: var(--gradient-primary); top: 0; bottom: 0; left: 50%; border-radius: 2px; box-shadow: 0 0 10px var(--shadow-glow); transform: translateX(-50%); }
+.timeline-item { padding: 10px 40px; position: relative; width: 50%; box-sizing: border-box; }
+.timeline-item::after { content: ''; position: absolute; width: 20px; height: 20px; background-color: #000000; border: 3px solid var(--text-primary); top: 20px; border-radius: 50%; z-index: 1; box-shadow: 0 0 15px var(--shadow-glow); }
+.timeline-item.left { left: 0; text-align: right; }
+.timeline-item.right { left: 50%; }
+.timeline-item.left::after { left: 100%; transform: translateX(-50%); }
+.timeline-item.right::after { left: 0; transform: translateX(-50%); }
+
 
 /* Countdown Timer */
 .countdown-container { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 3rem; text-align: center; }
