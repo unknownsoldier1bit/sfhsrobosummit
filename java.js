@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (distance < 0) {
           clearInterval(interval);
-          countdownContainer.innerHTML = "<div class='countdown-ended'>The event has started!</div>";
+          countdownContainer.innerHTML = "<div class='countdown-ended'>The event has ended, thank you for taking part!</div>";
         } else {
           const days = Math.floor(distance / (1000 * 60 * 60 * 24));
           const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
