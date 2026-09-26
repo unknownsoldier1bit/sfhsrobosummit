@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- 3. Countdown Timer ---
-  const countDownDate = new Date("Nov 27, 2025 08:00:00").getTime();
+  const countDownDate = new Date("Oct 30, 2026 08:15:00").getTime();
   const countdownContainer = document.getElementById("countdown-container");
 
   if (countdownContainer) {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (distance < 0) {
           clearInterval(interval);
-          countdownContainer.innerHTML = "<div class='countdown-ended'>The event has ended, thank you for taking part!</div>";
+          countdownContainer.innerHTML = "<div class='countdown-ended'>The event has started!</div>";
         } else {
           const days = Math.floor(distance / (1000 * 60 * 60 * 24));
           const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -72,230 +72,50 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // eventRules (keys must match data-event values)
-
-    // eventRules (keys must match data-event values)
-    // eventRules (keys must match data-event values)
   const eventRules = {
+    'balloon-car-race': `
+      <p><strong>Category:</strong> Junior School (Grades 3-5)</p>
+      <p><strong>Venue:</strong> Natyashala</p>
+      <p><strong>Team:</strong> 1-3 students per team</p>
+      <p>Design and build a balloon-powered vehicle that travels the greatest distance from the start line. No motors or electronics are allowed, so it all comes down to creative engineering and smart design. Three attempts allowed; best distance counts.</p>
+    `,
+
+    'hydraulic-arm': `
+      <p><strong>Category:</strong> Middle School (Grades 6-8)</p>
+      <p><strong>Venue:</strong> Einstein Hall</p>
+      <p><strong>Team:</strong> 1-3 students per team</p>
+      <p>Build a working robotic arm powered entirely by water pressure using syringes and tubing. No electricity, no motors. Use your arm to pick up objects and transfer them from Zone A to Zone B. Time will be recorded; maximum time allowed is 5 minutes.</p>
+      <p><strong>Reference video:</strong> <a href="https://youtube.com/shorts/GwhSDpXQtL8?si=v2ImyTOTf9MsgG5e" target="_blank" rel="noopener">Watch on YouTube</a></p>
+    `,
+
     'line-follower': `
-      <p><strong>Description:</strong> Build an autonomous robot that can follow a black line on a white surface and reach the finish as fast as possible.</p>
-      <ul>
-        <li>Robot must be fully autonomous and start with a button press by a judge.</li>
-        <li>Max dimensions: 20 × 20 × 20 cm.</li>
-        <li>Robot powered by onboard battery.</li>
-        <li>Each team gets one trial run and one official timed run.</li>
-        <li>Preparation time: 10 minutes before start (for calibration, programming, etc.).</li>
-        <li>Interference from coaches or misbehavior can lead to disqualification.</li>
-        <li>Judges’ decision is final.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Speed (Completion Time): 40</li>
-        <li>Accuracy (Line Following Precision): 25</li>
-        <li>Design & Stability: 15</li>
-        <li>Autonomous Functionality: 10</li>
-        <li>Rule Compliance & Team Conduct: 10</li>
-      </ul>
+      <p><strong>Category:</strong> Middle School (Grades 6-8) and High School (Grades 9-12)</p>
+      <p><strong>Venue:</strong> Newton Hall</p>
+      <p><strong>Team:</strong> 1-3 students per team</p>
+      <p>Build a fully autonomous robot that follows a black line on a white track and completes one full lap in the shortest possible time. No remote control is allowed. Once it starts, it is on its own. Precision programming and smart sensor design win this one.</p>
     `,
 
     'robo-race': `
-      <p><strong>Overview:</strong> Design a fast, stable, and intelligent robot that navigates an obstacle-filled track in the shortest time possible.</p>
-      <p><strong>Specifications:</strong></p>
-      <ul>
-        <li>Max dimensions: 25 × 25 × 25 cm.</li>
-        <li>Max voltage: 12V DC (battery-powered only).</li>
-        <li>Weight limit: 4 kg.</li>
-        <li>Robots can be wired or wireless.</li>
-      </ul>
-      <p><strong>Allowed Components:</strong></p>
-      <ul>
-        <li>Arduino / ESP32 or equivalent microcontroller.</li>
-        <li>DC / geared motors, L298N or L293D motor drivers.</li>
-        <li>Wireless modules (Bluetooth, RF, Wi-Fi).</li>
-        <li>Custom chassis, battery (max 12V).</li>
-      </ul>
-      <p><strong>Event Details:</strong></p>
-      <ul>
-        <li>Track includes curves, ramps, and obstacles.</li>
-        <li>Each team gets one trial and one official run.</li>
-        <li>Damaging track or other robots = disqualification.</li>
-        <li>Ties broken by fewer penalties.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Speed (time): 40</li>
-        <li>Stability & Control: 20</li>
-        <li>Design & Build Quality: 15</li>
-        <li>Autonomous Features: 15</li>
-        <li>Rule Compliance: 10</li>
-      </ul>
+      <p><strong>Category:</strong> Middle School (Grades 6-8) and High School (Grades 9-12)</p>
+      <p><strong>Venue:</strong> Newton Hall</p>
+      <p><strong>Team:</strong> 1-3 students per team</p>
+      <p>Navigate a custom obstacle course featuring ramps, speed breakers, curves, and more in the fastest time. Build your robot, programme your strategy, and race against the clock. You can use manual wireless control or make it fully autonomous.</p>
     `,
 
     'robo-soccer': `
-      <p><strong>Description:</strong> Teams design robots to play soccer in a mini arena, competing head-to-head to score goals within the time limit.</p>
-      <p><strong>Robot Specifications:</strong></p>
-      <ul>
-        <li>Max size: 30 × 30 × 30 cm.</li>
-        <li>Max weight: 2.5 kg.</li>
-        <li>Battery-powered only (max 12V).</li>
-        <li>2-wheel or 4-wheel drive allowed.</li>
-        <li>Controlled via wired or wireless remote (Bluetooth/joystick).</li>
-      </ul>
-      <p><strong>Arena:</strong></p>
-      <ul>
-        <li>Approx. 8 ft × 6 ft with 40 × 20 cm goals.</li>
-        <li>Surface: smooth wooden/hardboard base.</li>
-        <li>Ball: light plastic/tennis ball (5–8 cm).</li>
-      </ul>
-      <p><strong>Gameplay Rules:</strong></p>
-      <ul>
-        <li>4-minute matches (2 halves × 2 min each).</li>
-        <li>+10 points per goal, +5 for defense, −2 for out of bounds, −5 for fouls.</li>
-        <li>Golden Goal if tied after time ends.</li>
-        <li>Only 2 robots on field per team.</li>
-        <li>No trapping or grabbing the ball.</li>
-        <li>Intentional damage = disqualification.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Design & Build: 20</li>
-        <li>Speed & Control: 20</li>
-        <li>Strategy & Gameplay: 30</li>
-        <li>Team Coordination: 10</li>
-        <li>Fair Play & Safety: 20</li>
-      </ul>
+      <p><strong>Category:</strong> Middle School (Grades 6-8) and High School (Grades 9-12)</p>
+      <p><strong>Venue:</strong> Globe Theatre</p>
+      <p><strong>Team:</strong> 3-person event, 3 robots per team</p>
+      <p>Two teams, three robots each, one ball, one goal. Score more than your opponent in a 4-minute match. Build your robots, develop your tactics, and take the field. Golden Goal and penalty shootout decide tied matches.</p>
     `,
 
-    'royal-rumble': `
-      <p><strong>Description:</strong> A multi-bot, free-for-all battle where the last robot standing wins!</p>
-      <p><strong>Specifications:</strong></p>
-      <ul>
-        <li>Max size: 35 × 35 × 25 cm.</li>
-        <li>Weight limit: 9 kg.</li>
-        <li>Control: wireless only (no autonomous/wired).</li>
-        <li>Battery: up to 12V.</li>
-        <li>No flames, liquids, or hazardous materials.</li>
-      </ul>
-      <p><strong>Match Rules:</strong></p>
-      <ul>
-        <li>3–10 robots per round.</li>
-        <li>Round time: 3 minutes.</li>
-        <li>Eliminated if pushed out, flipped, or immobilized for 10 seconds.</li>
-        <li>Last active bot wins.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Robot Design & Durability: 30</li>
-        <li>Driver Skill & Aggression: 30</li>
-        <li>Strategy: 20</li>
-        <li>Safety & Compliance: 10</li>
-        <li>Teamwork: 10</li>
-      </ul>
-    `,
-
-    'innovation-sr': `
-      <p><strong>Objective:</strong> Design a scalable hardware or digital prototype improving transportation or energy efficiency in a local community.</p>
-      <ul>
-        <li>Encourage sustainable, data-driven, and feasible solutions.</li>
-        <li>Use IoT, automation, or simulation for real-world impact.</li>
-      </ul>
-      <p><strong>Team:</strong> 2–4 students (Grades IX–XII).</p>
-      <p><strong>Allowed Components:</strong></p>
-      <ul>
-        <li>Arduino / Microcontroller boards.</li>
-        <li>Basic sensors, motors, chassis, and 12V battery max.</li>
-        <li>Recyclable materials encouraged.</li>
-      </ul>
-      <p><strong>Presentation:</strong></p>
-      <ul>
-        <li>Working prototype (hardware or simulation).</li>
-        <li>Brief report or poster explaining problem, solution, and scalability.</li>
-        <li>Live demo or 1–2 min video.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Innovation & Creativity: 20</li>
-        <li>Relevance to Theme: 20</li>
-        <li>Working Functionality: 25</li>
-        <li>Design & Build Quality: 15</li>
-        <li>Presentation & Explanation: 20</li>
-      </ul>
-    `,
-
-    'innovation-jr': `
-      <p><strong>Theme:</strong> Waste Management</p>
-      <p><strong>Objective:</strong> Build a simple robotic prototype solving a recycling, waste, or other such issues at home or in the community.</p>
-      <p><strong>Team:</strong> 2–4 students (Grades III–VIII).</p>
-      <p><strong>Allowed Components:</strong></p>
-      <ul>
-        <li>Arduino Uno / Nano or basic microcontroller.</li>
-        <li>Simple sensors (IR, water level, ultrasonic, etc.).</li>
-        <li>BO / DC / Servo motors, 12V battery max.</li>
-        <li>Recycled materials, cardboard, bottles, etc.</li>
-      </ul>
-      <p><strong>Presentation:</strong></p>
-      <ul>
-        <li>Explain problem and solution.</li>
-        <li>Demonstrate working prototype (live or via video).</li>
-        <li>Optional: Poster or model explaining design.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Innovation & Creativity: 20</li>
-        <li>Relevance to Theme: 20</li>
-        <li>Working Functionality: 25</li>
-        <li>Design & Build Quality: 15</li>
-        <li>Presentation & Explanation: 20</li>
-      </ul>
-    `,
-
-    'tug-of-war': `
-      <p><strong>Description:</strong> Two robots battle to pull the other past the centerline using strength, traction, and control.</p>
-      <ul>
-        <li>Robots start 40–50 cm from centerline; tow string remains slack.</li>
-        <li>Each round lasts 2 minutes; best of 3 rounds decides winner.</li>
-        <li>Tie-breaker: robot farther from line at time end loses.</li>
-        <li>Robot size ≤ 50 × 50 × 50 cm; weight ≤ 4.5 kg.</li>
-        <li>Max 2 team members per team.</li>
-        <li>No ready-made or RC toy robots allowed.</li>
-        <li>Unethical behavior = disqualification.</li>
-        <li>Judges’ decisions are final; no video evidence accepted.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Pulling Strength: 30</li>
-        <li>Traction & Control: 25</li>
-        <li>Robot Design & Stability: 20</li>
-        <li>Strategy & Execution: 15</li>
-        <li>Rule Compliance & Conduct: 10</li>
-      </ul>
-    `,
-
-    'balloon-race': `
-      <p><strong>Overview:</strong> Build a lightweight, balloon-powered vehicle that moves the farthest using only the thrust of air released from balloons.</p>
-      <ul>
-        <li>2–4 students per team (Grades III–VIII).</li>
-        <li>Vehicle must move only by balloon propulsion—no motors allowed.</li>
-        <li>Use recyclable, lightweight materials (bottles, straws, cardboard, etc.).</li>
-        <li>Each team presents their car and explains their design choices.</li>
-      </ul>
-      <p><strong>Evaluation Criteria (100 Marks):</strong></p>
-      <ul>
-        <li>Innovation & Design: 20</li>
-        <li>Distance Covered: 25</li>
-        <li>Stability & Build: 20</li>
-        <li>Use of Materials: 15</li>
-        <li>Presentation: 20</li>
-      </ul>
-    `,
-
-    'circuit-breaker': `
-      <p><strong>Overview:</strong> A half an hour workshop will be conducted before the event. In this interactive modeling session, students will learn how to 
-      design and visualize 3D components using TinkerCAD and similar software. The workshop focuses on translating creative ideas into tangible digital models, 
-      helping participants understand real-world applications of CAD in robotics, design, and engineering.</p>
+    'drone-quidditch': `
+      <p><strong>Category:</strong> Middle School (Grades 6-8) and High School (Grades 9-12)</p>
+      <p><strong>Venue:</strong> Basketball Court</p>
+      <p><strong>Team:</strong> 1-3 students per team</p>
+      <p>Fly your drone through a sequence of suspended hoops, Harry Potter Quidditch style. Navigate the course in order, clear every hoop, and land the fastest clean time. Penalties apply for missed hoops and crashes. No custom build is required. Just bring your quadcopter and fly.</p>
     `,
   };
-
-
 
   // attach listener to every rule-button
   document.querySelectorAll('.rule-button').forEach(btn => {

@@ -407,14 +407,13 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
     }
 
     .modal {
-        align-items: flex-start 
-        padding-top: 120px 
+        align-items: flex-start;
+        padding-top: 120px;
     }
 
     .modal-content {
-        margin-top: 0 
+        margin-top: 0;
     }
-}
 }
 /* Schedule Page */
 
@@ -444,21 +443,20 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 .timeline-item.left::after { left: 100%; transform: translateX(-50%); }
 .timeline-item.right::after { left: 0; transform: translateX(-50%); }
 
-.timeline::after { 
-    content: ''; 
-    position: absolute; 
-    width: 4px; 
-    background: var(--gradient-primary); 
-    
-    /* CHANGE THIS VALUE to move the line down */
-    top: 80px;  /* Formerly top: 0; */
-    
-    bottom: 0; 
-    left: 50%; 
-    border-radius: 2px; 
-    box-shadow: 0 0 10px var(--shadow-glow); 
-    transform: translateX(-50%); 
+/* connect each dot to the next one, so the line starts and ends on a dot */
+.timeline::after { display: none; }
+.timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 33px;
+    bottom: -33px;
+    background: var(--gradient-primary);
+    box-shadow: 0 0 10px var(--shadow-glow);
+    transform: translateX(-50%);
 }
+.timeline-item.left::before { left: 100%; }
+.timeline-item.right::before { left: 0; }
 
 .timeline-content { 
     background: var(--card-bg); 
@@ -600,6 +598,7 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
         color: #ffffff;
         text-shadow: none;
     }
+}
 
 @media (max-width: 480px) {
     .countdown-container { gap: 0.5rem; }
@@ -713,4 +712,14 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
   to   { opacity: 1; transform: translateY(0); }
 }
 
-
+/* Timeline on phones: one column with the line on the left */
+@media (max-width: 768px) {
+    .timeline { padding: 0 1rem 3rem; }
+    .timeline-item,
+    .timeline-item.left,
+    .timeline-item.right { width: 100%; left: 0; padding: 10px 0 10px 44px; text-align: left; }
+    .timeline-item.left::after,
+    .timeline-item.right::after { left: 16px; }
+    .timeline-item.left::before,
+    .timeline-item.right::before { left: 16px; }
+}
