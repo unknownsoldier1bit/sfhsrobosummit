@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Venue:</strong> Natyashala</p>
       <p><strong>Team:</strong> 1-3 students per team</p>
       <p>Design and build a balloon-powered vehicle that travels the greatest distance from the start line. No motors or electronics are allowed, so it all comes down to creative engineering and smart design. Three attempts allowed; best distance counts.</p>
+      <p><strong>Full rules:</strong> <a href="SFHS-RoboSummit-2026-Rulebook.pdf#page=4" target="_blank" rel="noopener">Rulebook, Section 3 (PDF)</a></p>
     `,
 
     'hydraulic-arm': `
@@ -86,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Team:</strong> 1-3 students per team</p>
       <p>Build a working robotic arm powered entirely by water pressure using syringes and tubing. No electricity, no motors. Use your arm to pick up objects and transfer them from Zone A to Zone B. Time will be recorded; maximum time allowed is 5 minutes.</p>
       <p><strong>Reference video:</strong> <a href="https://youtube.com/shorts/GwhSDpXQtL8?si=v2ImyTOTf9MsgG5e" target="_blank" rel="noopener">Watch on YouTube</a></p>
+      <p><strong>Full rules:</strong> <a href="SFHS-RoboSummit-2026-Rulebook.pdf#page=5" target="_blank" rel="noopener">Rulebook, Section 4 (PDF)</a></p>
     `,
 
     'line-follower': `
@@ -93,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Venue:</strong> Newton Hall</p>
       <p><strong>Team:</strong> 1-3 students per team</p>
       <p>Build a fully autonomous robot that follows a black line on a white track and completes one full lap in the shortest possible time. No remote control is allowed. Once it starts, it is on its own. Precision programming and smart sensor design win this one.</p>
+      <p><strong>Full rules:</strong> <a href="SFHS-RoboSummit-2026-Rulebook.pdf#page=7" target="_blank" rel="noopener">Rulebook, Section 5 (PDF)</a></p>
     `,
 
     'robo-race': `
@@ -100,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Venue:</strong> Newton Hall</p>
       <p><strong>Team:</strong> 1-3 students per team</p>
       <p>Navigate a custom obstacle course featuring ramps, speed breakers, curves, and more in the fastest time. Build your robot, programme your strategy, and race against the clock. You can use manual wireless control or make it fully autonomous.</p>
+      <p><strong>Full rules:</strong> <a href="SFHS-RoboSummit-2026-Rulebook.pdf#page=9" target="_blank" rel="noopener">Rulebook, Section 6 (PDF)</a></p>
     `,
 
     'robo-soccer': `
@@ -107,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Venue:</strong> Globe Theatre</p>
       <p><strong>Team:</strong> 3-person event, 3 robots per team</p>
       <p>Two teams, three robots each, one ball, one goal. Score more than your opponent in a 4-minute match. Build your robots, develop your tactics, and take the field. Golden Goal and penalty shootout decide tied matches.</p>
+      <p><strong>Full rules:</strong> <a href="SFHS-RoboSummit-2026-Rulebook.pdf#page=10" target="_blank" rel="noopener">Rulebook, Section 7 (PDF)</a></p>
     `,
 
     'drone-quidditch': `
@@ -114,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <p><strong>Venue:</strong> Basketball Court</p>
       <p><strong>Team:</strong> 1-3 students per team</p>
       <p>Fly your drone through a sequence of suspended hoops, Harry Potter Quidditch style. Navigate the course in order, clear every hoop, and land the fastest clean time. Penalties apply for missed hoops and crashes. No custom build is required. Just bring your quadcopter and fly.</p>
+      <p><strong>Full rules:</strong> <a href="SFHS-RoboSummit-2026-Rulebook.pdf#page=12" target="_blank" rel="noopener">Rulebook, Section 8 (PDF)</a></p>
     `,
   };
 

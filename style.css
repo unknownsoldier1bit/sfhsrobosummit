@@ -292,6 +292,9 @@ body.page-contact .page-background-static { background-image: url('contact.jpeg'
 .rule-button:hover, .rule-button.active {
     background: var(--text-primary); color: var(--primary-bg); border-color: var(--text-primary);
 }
+.rulebook-cta { text-align: center; max-width: 700px; margin: 0 auto 4rem; }
+.rulebook-cta p { color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-bottom: 1.5rem; }
+.modal-content a { color: var(--text-primary); text-decoration: underline; }
 /* Footer */
 .footer { background: var(--secondary-bg); padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color); color: var(--text-secondary); }
 
